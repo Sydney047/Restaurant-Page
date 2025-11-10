@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'mine';
+    src: url('alpha_echo-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'paragraphs';
+    src: url("./Amaranth-Regular.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    background-color: #235347;
+}
+.container {
+    display: grid;
+    grid-template: 15ch 1fr 7ch / 1fr;
+    font-family: 'paragraphs';
+}
+.header, .nav, .content > #menuTitle, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4ch;
+}
+.header {
+    background-color: #0b2b26;
+    opacity: .8;
+    border-radius: 1rem;
+}
+.nav > button {
+    width: 15ch;
+    padding: .6rem;
+    border: none;
+    border-radius: 9px;
+    background-color: #235347;
+}
+.nav > button:hover {
+    border: 3px solid #8eb69b;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3ch;
+}
+.content > #menuTitle {
+    height: 10ch;
+    width: 60%;
+    background-color: #235347;
+    color: black;
+    font-family: 'mine';
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.content > .head {
+    height: 2%;
+    width: 90%;
+    position: relative;
+    left: 10%;
+    background-color: #235347;
+    color: #0b2b26;
+    font-family: 'mine';
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.content > .menuDiv {
+    width: 40%;
+    height: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3ch;
+    padding: 1.8%;
+    background-color: #0b2b26;
+    color: #8eb69b;
+    opacity: .9;
+    border-radius: .8rem 3rem;
+    font-size: 1.1rem;
+}
+.content > .menuDiv > img {
+    position: relative;
+    left: 3ch;
+    grid-column: 1 / -1 ;
+    height: 60%;
+    width: 80%;
+    border-radius: .8rem;
+}
+.content > .menuDiv > h3 {
+    font-family: 'mine';
+}
+.content > .menuDiv > p {
+    width: 60%;
+}
+.content > .menuDiv > .dish {
+    width: 70%;
+}
+.footer {
+    background-color: #0b2b26;
+    border-radius: 1rem;
+    margin-top: 2ch;
+    padding: 4px;
+}

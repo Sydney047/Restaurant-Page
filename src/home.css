@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'mine';
+    src: url('alpha_echo-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'paragraphs';
+    src: url("./Amaranth-Regular.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    background-color: #235347;
+}
+.container {
+    display: grid;
+    grid-template: 15ch 1fr 7ch / 1fr;
+    font-family: 'paragraphs';
+}
+.header, .nav, #homeTitle, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4ch;
+}
+.header {
+    background-color: #0b2b26;
+    opacity: .8;
+    border-radius: 1rem;
+}
+.nav > button {
+    width: 15ch;
+    padding: .6rem;
+    border: none;
+    border-radius: 9px;
+    background-color: #235347;
+}
+.nav > button:hover {
+    border: 3px solid #8eb69b;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 3ch;
+}
+.content > #homeTitle {
+    height: 5%;
+    width: 60%;
+    background-color: #235347;
+    font-family: 'mine';
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.content > .homeDiv {
+    width: 40%;
+    height: 30ch;
+    padding: 2%;
+    background-color: #6b9071;
+    opacity: .7;
+    border-radius: 1rem 3rem;
+    font-size: 1.3rem;
+}
+.content > .homeDiv > h3 {
+    position: relative;
+    left: 3ch;
+    font-family: 'mine';
+    font-size: 2rem;
+}
+.footer {
+    background-color: #0b2b26;
+    border-radius: 1rem;
+    margin-top: 2ch;
+    padding: 4px;
+}
