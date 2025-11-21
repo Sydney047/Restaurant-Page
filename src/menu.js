@@ -2,7 +2,13 @@ import "./menu.css";
 
 import guacamole from "../images/guacamole.jpg";
 import dip from "../images/dip.avif";
-import banana from "../images/banana_smoothie.jpg";
+import lasagna from '../images/lasagna.jpg';
+import caesar from '../images/caesar.jpg';
+import pasta from '../images/pasta.jpeg';
+import bean from '../images/bean.jpeg';
+import Strawberry from '../images/Strawberry.jpg';
+import mango from '../images/mango.jpg';
+import berry from '../images/berry.jpg';
 
 const content = document.querySelector(".content");
 
@@ -68,22 +74,22 @@ function menu(){
     dish = "Vegetable Lasagna";
     serveDetails = `${dish} is a layered italian dish made with pasta sheets, a vegetable-packed sauce. Baked until golden and bubbly`;
     price = "Rs 160";
-    items(dip, dish, serveDetails, price);
+    items(lasagna, dish, serveDetails, price);
 
     dish = "Caesar Salad";
     serveDetails = "Made with romaine lettuce, croutons, and a dressing of olive oil, garlic, Parmesan cheese, lemon juice and black pepper";
     price = "Rs 250";
-    items(dip, dish, serveDetails, price);
+    items(caesar, dish, serveDetails, price);
 
     dish = "Vegetable Pasta Bake";
     serveDetails = "This cheesy pasta bake is packed with veggies, using pasta sauce, sauce and cheese. A quick, easy and great weeknight dinner";
     price = "Rs 350";
-    items(dip, dish, serveDetails, price);
+    items(pasta, dish, serveDetails, price);
 
     dish = "Bean And Halloumi Stew";
     serveDetails = "Freshly baked farm beans served alongside our delicious halloumi";
     price = "Rs 450";
-    items(dip, dish, serveDetails, price);
+    items(bean, dish, serveDetails, price);
 
     headClass = "head smoothies";
     headTitle = "Juice / Smoothies";
@@ -92,17 +98,17 @@ function menu(){
     dish = "Strawberry Banana";
     serveDetails = "Frozen strawberries, a banana blent with yogurt for extra protein and richer texture";
     price = "Rs 70";
-    items(banana, dish, serveDetails, price);
+    items(Strawberry, dish, serveDetails, price);
 
     dish = "Mango And Pineapple Paradise";
     serveDetails = "A frozen mango, pineapple chunks, milk and a sweetener blent with yogurt until creamy";
     price = "Rs 70"; 
-    items(banana, dish, serveDetails, price);
+    items(mango, dish, serveDetails, price);
 
     dish = "Mixed Berry";
     serveDetails = "We simply blend frozen berries, banana, vanilla Greek yogurt, liquid of the customer's choosing and sweetener if they desire";
     price = "Rs 85";
-    items(banana, dish, serveDetails, price);
+    items(berry, dish, serveDetails, price);
 
     content.appendChild(container2);
 }

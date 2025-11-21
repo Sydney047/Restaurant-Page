@@ -28,7 +28,7 @@ function createElement(heading, digits, mailId, socials){
 function about(){
     title();
 
-    let heading = "Father Green";
+    let heading = "Sydney Sage";
     let digits = "555-232-775";
     let mailId = "reallyObviousEmail@real.com";
     let socials = "@fatherGreen/socialAccount";

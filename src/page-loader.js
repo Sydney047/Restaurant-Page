@@ -7,6 +7,8 @@ const homeBtn = document.querySelector("#homeBtn");
 const menuBtn = document.querySelector("#menuBtn");
 const aboutBtn = document.querySelector("#contactBtn");
 
+home();
+
 menuBtn.addEventListener('click', () => {
         container.replaceChildren();
         menu();
